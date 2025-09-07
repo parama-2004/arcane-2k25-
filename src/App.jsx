@@ -12,7 +12,7 @@ function App() {
     <Router basename={import.meta.env.BASE_URL}>
       <div className="App bg-gray-950 min-h-screen text-white">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/arcane-2k25-" element={<Home />} />
           <Route path="/clubs" element={<ClubsPage />} />
           <Route path="/register" element={<RegisterationPage />} /> {/* ✅ Added */}
           <Route path="/events" element={<EventPage />} />
