@@ -9,7 +9,7 @@ import "./index.css";
 
 function App() {
   return (
-    <Router basename="/arcane-2k25-">
+    <Router basename={import.meta.env.BASE_URL}>
       <div className="App bg-gray-950 min-h-screen text-white">
         <Routes>
           <Route path="/" element={<Home />} />
