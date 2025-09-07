@@ -12,13 +12,17 @@ function App() {
     <Router basename={import.meta.env.BASE_URL}>
       <div className="App bg-gray-950 min-h-screen text-white">
         <Routes>
-          <Route path="/arcane-2k25-" element={<Home />} />
-          <Route path="/arcane-2k25-/" element={<Home />} />
-          <Route path="/clubs" element={<ClubsPage />} />
-          <Route path="/register" element={<RegisterationPage />} /> {/* ✅ Added */}
-          <Route path="/events" element={<EventPage />} />
-          <Route path="/events/:type" element={<EventsDetailsPage />} />
-          <Route path="/events/:type/:id" element={<EventDescription />} />
+    
+  <Route path="/arcane-2k25-" element={<Home />} />
+  <Route path="/arcane-2k25-/" element={<Navigate to="/arcane-2k25-" replace />} /> {/* Redirect */}
+  <Route path="/clubs" element={<ClubsPage />} />
+  <Route path="/register" element={<RegisterationPage />} />
+  <Route path="/events" element={<EventPage />} />
+  <Route path="/events/:type" element={<EventsDetailsPage />} />
+  <Route path="/events/:type/:id" element={<EventDescription />} />
+  <Route path="*" element={<h1>404 Not Found</h1>} />
+
+
         </Routes>
       </div>
     </Router>
