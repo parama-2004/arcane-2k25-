@@ -6,5 +6,5 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
  
   plugins: [react(), tailwindcss()],
-  base: "/arcane-2k25-/",
+  base: '/arcane-2k25-/',
 })
