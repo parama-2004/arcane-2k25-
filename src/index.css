@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+
+
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-marquee-left {
+  display: flex;
+  animation: marquee-left 20s linear infinite;
+}
+
+.animate-marquee-right {
+  display: flex;
+  animation: marquee-right 20s linear infinite;
+}
+
+ @font-face {
+    font-family: 'TFTheme';
+    src: url('/fonts/valorax.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .font-tftheme {
+    font-family: 'TFTheme', sans-serif;
+  }
+  
+  @keyframes appear {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Scroll animation */
+.block {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 35%;
+}

@@ -1,0 +1,24 @@
+.animated-gradient {
+  background: linear-gradient(
+    -45deg,
+    #3b82f6,
+    #ec4899,
+    #9333ea,
+    #f97316,
+    #11f433
+  );
+  background-size: 400% 400%;
+  animation: flowingGradient 5s ease infinite;
+}
+
+@keyframes flowingGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

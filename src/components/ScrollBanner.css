@@ -1,0 +1,36 @@
+/* Common row setup */
+.marquee-row {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Scrolling effect */
+.marquee {
+  display: inline-block;
+  animation: scroll-left 25s linear infinite;
+}
+
+.marquee-reverse {
+  animation: scroll-right 25s linear infinite;
+}
+
+/* Keyframes */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-33.333%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
