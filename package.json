@@ -1,5 +1,5 @@
 {
-  "name": "arcane2k25",
+  "name": "arcane-2k25-",
   "homepage": "https://parama-2004.github.io/arcane-2k25-/",
   "private": true,
   "version": "0.0.0",
@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && copy dist\\index.html dist\\404.html",
     "deploy": "gh-pages -d dist -f"
 
   },
